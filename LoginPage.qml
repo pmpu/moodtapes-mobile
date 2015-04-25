@@ -31,7 +31,7 @@ Page {
 			width: parent.width
 			placeholderText: qsTr("e-mail")
 
-			text: "spamgoga@gmail.com"
+			//text: "spamgoga@gmail.com"
 		}
 
 		TextField {
@@ -40,7 +40,7 @@ Page {
 			input.echoMode: TextInput.Password
 			placeholderText: qsTr("password")
 
-			text: "ternary6"
+			//text: "ternary6"
 		}
 
 		Button {
@@ -59,6 +59,7 @@ Page {
 							settings.token = dobj.session
 							login()
 						}
+						else console.log(dobj.errorMessage)
 					}
 				})
 			}

@@ -10,7 +10,7 @@ Page {
 	MouseArea {
 		anchors.fill: parent
 		onClicked: {
-			pageStack.push(Qt.resolvedUrl("PlayerPage.qml"), { token: token })
+			pageStack.push(Qt.resolvedUrl("MoodPage.qml"), { token: token, moodId: 6 })
 		}
 	}
 }
