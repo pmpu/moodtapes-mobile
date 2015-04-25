@@ -1,6 +1,7 @@
 TEMPLATE = app
 
-QT += qml quick
+QT += qml quick svg
+#QTPLUGIN += qsvg
 
 SOURCES += main.cpp
 
@@ -11,3 +12,4 @@ QML_IMPORT_PATH =
 
 # Default rules for deployment.
 include(deployment.pri)
+

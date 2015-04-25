@@ -1,6 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
+        <file>MainPage.qml</file>
+        <file>LoginPage.qml</file>
+        <file>httphelper.js</file>
+        <file>logo.jpg</file>
     </qresource>
 </RCC>
