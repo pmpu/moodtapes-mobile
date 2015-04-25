@@ -14,7 +14,7 @@ ApplicationWindow {
 	initialPage: LoginPage {
 		id: loginp
 		visible: true
-		onLogin: { main.token = loginp.token ; app.initialPage = main; main.visible = true }
+		onLogin: { main.token = loginp.token; app.initialPage = main; main.visible = true; }
 	}
 
 	MainPage {

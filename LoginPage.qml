@@ -8,10 +8,11 @@ Page {
 
 	signal login
 	property alias token: settings.token
+	property bool lout: false
 
 	Settings {
 		id: settings
-		property string token
+		property string token: ""
 	}
 
 	title: qsTr("Log in to your moodtapes account")
@@ -23,7 +24,7 @@ Page {
 		Image {
 			id: logo
 			anchors.horizontalCenter: parent.horizontalCenter
-			source: "logo.jpg"
+			source: "logo.png"
 		}
 
 		TextField {
@@ -57,6 +58,7 @@ Page {
 						var dobj = JSON.parse(data)
 						if(!dobj.error) {
 							settings.token = dobj.session
+							pageStack.replace(Qt.resolvedUrl("MainPage.qml"))
 							login()
 						}
 						else console.log(dobj.errorMessage)
@@ -67,7 +69,12 @@ Page {
 	}
 
 	Component.onCompleted: {
+		if(lout) {
+			settings.token = ""
+			console.log(token, settings.token)
+		}
 		if(settings.token) {
+			console.log(token)
 			login()
 		}
 	}

@@ -4,7 +4,7 @@
         <file>MainPage.qml</file>
         <file>LoginPage.qml</file>
         <file>httphelper.js</file>
-        <file>logo.jpg</file>
         <file>MoodPage.qml</file>
+        <file>logo.png</file>
     </qresource>
 </RCC>

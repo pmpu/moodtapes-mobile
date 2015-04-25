@@ -35,7 +35,7 @@ Page {
 					mPicture.model = pictures.length
 					player.source = playlistModel.get(playlist.current - 1).uri
 				}
-				else console.log(dobj.errorMsg)
+				else console.log(mood.errorMsg)
 			}
 		})
 	}
@@ -129,6 +129,17 @@ Page {
 				styleColor: "dark grey"
 			}
 		}
+	}
+
+	IconButton {
+		name: "navigation/arrow_back"
+		color: Theme.backgroundColor
+		anchors.left: parent.left
+		anchors.top: parent.top
+		anchors.margins: 20
+		width: 70
+		height: 70
+		onClicked: page.pop()
 	}
 
 	MediaPlayer {
