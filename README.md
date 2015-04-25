@@ -1,5 +1,5 @@
 # moodtapes-mobile
-Mobile client for moodtapes service written using Qt and material-qml.
+Mobile client for moodtapes service written using Qt and qml-material.
 About moodtapes
 ---------------
 Read at
