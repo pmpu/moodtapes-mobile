@@ -1,6 +1,6 @@
 # moodtapes-mobile
-Mobile client for moodtapes service.
-A mobile app written using Qt.
+Mobile client for moodtapes service written using Qt and material-qml.
 About moodtapes
 ---------------
-Nothing to say here yet.
+Read at
+http://46.101.170.107/
