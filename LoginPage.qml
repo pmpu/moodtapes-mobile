@@ -7,6 +7,7 @@ Page {
 	id: page
 
 	signal login
+	property alias token: settings.token
 
 	Settings {
 		id: settings

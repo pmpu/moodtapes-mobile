@@ -12,9 +12,9 @@ ApplicationWindow {
 	}
 
 	initialPage: LoginPage {
-		id: login
+		id: loginp
 		visible: true
-		onLogin: { app.initialPage = main; main.visible = true }
+		onLogin: { main.token = loginp.token ; app.initialPage = main; main.visible = true }
 	}
 
 	MainPage {

@@ -5,5 +5,6 @@
         <file>LoginPage.qml</file>
         <file>httphelper.js</file>
         <file>logo.jpg</file>
+        <file>PlayerPage.qml</file>
     </qresource>
 </RCC>
